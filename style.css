@@ -1,0 +1,73 @@
+/*
+Theme Name: Twentytwelve Child theme for Credit Union blog
+Description: Child theme for the twentytwelve theme 
+Author: raj
+Template: twentytwelve
+*/
+
+@import url("../twentytwelve/style.css");
+
+#masthead {
+    background-color: #000000;
+    margin-left: -40px;
+    margin-right: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.site {
+    background-color: #999966;
+}
+
+.main-navigation li ul li a {
+    background: none repeat scroll 0 0 #000000;
+}
+
+.main-navigation li ul li a:hover {
+    background: none repeat scroll 0 0 #333333;
+    color: #ffffff;
+}
+
+
+/* make nav menu text white */
+.nav-menu {
+    color: #ffffff;
+}
+
+.main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a, .main-navigation .current_page_item > a, .main-navigation .current_page_ancestor > a {
+    color: #ffffff;
+}
+
+.main-navigation li a {
+    color: #ffffff;
+}
+
+.main-navigation li a:hover {
+    color: #ffffff;
+}
+
+
+/* make body text black */
+body {
+    color: #000000;
+}
+
+.comments-link a, .entry-meta a {
+    color: #000000;
+}
+
+footer.entry-meta {
+    color: #000000;
+}
+
+.widget-area .widget a {
+    color: #000000;
+}
+
+.archive-title, .page-title, .widget-title, .entry-content th, .comment-content th {
+    color: #000000;
+}
+
+.entry-content table, .comment-content table {
+    color: #000000;
+}
