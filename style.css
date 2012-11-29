@@ -1,73 +1,227 @@
 /*
+
 Theme Name: Twentytwelve Child theme for Credit Union blog
-Description: Child theme for the twentytwelve theme 
+
+Description: Child theme for the twentytwelve theme
+
 Author: raj
+
 Template: twentytwelve
+
 */
+
+
+
 
 @import url("../twentytwelve/style.css");
 
+
+
+
 #masthead {
-    background-color: #000000;
-    margin-left: -40px;
+
+    background-color: #231f20;
+
+    margin-top: 0px;
+
+	margin-left: -40px;
+
     margin-right: -40px;
-    padding-left: 40px;
-    padding-right: 40px;
+
+    padding-left: 0px;
+
+    padding-right: 0px;
+
 }
+
+
+
+#site-navigation.main-navigation {
+
+    margin-top: 0 ;
+
+}
+
+
+
+/* Navigation Menu */
+
+
+.main-navigation {
+
+	margin-top: 24px;
+
+	margin-left: 0px;
+
+	margin-top: 1.714285714rem;
+
+	text-align: center;
+
+	background:#000000
+
+}
+
+
+#page {
+
+	margin: 0em auto;
+
+	max-width: 100%;
+
+}
+
+
+
+/* Header */
+
+
+.site-header {
+
+	padding: 24px 0;
+
+	padding: 1.714285714rem 0;
+
+	height: 110px;
+
+}
+
+
+.entry-header {
+
+	margin-bottom: 0px;
+
+	margin-bottom: 1.714285714rem;
+
+}
+
 
 .site {
+
     background-color: #999966;
+
 }
+
 
 .main-navigation li ul li a {
+
     background: none repeat scroll 0 0 #000000;
+
 }
 
+
 .main-navigation li ul li a:hover {
-    background: none repeat scroll 0 0 #333333;
+
+    background: none repeat scroll 0 0 #000000;
+
     color: #ffffff;
+
 }
+
 
 
 /* make nav menu text white */
+
+
 .nav-menu {
+
     color: #ffffff;
+
 }
+
 
 .main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a, .main-navigation .current_page_item > a, .main-navigation .current_page_ancestor > a {
+
     color: #ffffff;
+
 }
+
 
 .main-navigation li a {
+
     color: #ffffff;
+
 }
 
+
 .main-navigation li a:hover {
+
     color: #ffffff;
+
 }
+
 
 
 /* make body text black */
+
+
 body {
+
     color: #000000;
+
 }
+
 
 .comments-link a, .entry-meta a {
+
     color: #000000;
+
 }
+
 
 footer.entry-meta {
+
     color: #000000;
+
 }
+
+
+
 
 .widget-area .widget a {
+
     color: #000000;
+
 }
+
+
 
 .archive-title, .page-title, .widget-title, .entry-content th, .comment-content th {
+
     color: #000000;
+
 }
 
+
 .entry-content table, .comment-content table {
+
     color: #000000;
+
+}
+
+
+.qtrans_language_chooser li {
+
+
+     height:22px;
+
+
+}
+
+
+
+.qtrans_language_chooser .qtrans_flag_and_text {
+
+     width:40px;  /* image width */
+
+     height:40px; /* image height */
+
+     padding:7px;
+
+}
+
+
+.qtrans_language_chooser .qtrans_flag_and_text span {
+
+     margin-left: 35px;
+
 }

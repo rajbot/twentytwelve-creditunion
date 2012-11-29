@@ -26,6 +26,11 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 <?php wp_head(); ?>
+<style type="text/css">
+<!--
+.style1 {color: #FFFFFF}
+-->
+</style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -34,20 +39,34 @@
      	     <hgroup>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			    			  <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-						      </hgroup>
-
-
-							<?php $header_image = get_header_image();
+       </hgroup>
+     	     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                         <tr>
+                                           <td><a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                                             <?php $header_image = get_header_image();
 							      if ( ! empty( $header_image ) ) : ?>
-							      	   <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
-								      <?php endif; ?>
-								      	    
-												<nav id="site-navigation" class="main-navigation" role="navigation">
-												     			  <h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
-															      				<div class="skip-link assistive-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a></div>
+                                           &nbsp; &nbsp;<img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
+                                             <?php endif; ?>
+                                           </a></td>
+                                           <td valign="top"><nav id="site-navigation2" class="main-navigation" role="navigation"></nav></td>
+                                           <td valign="top"></td>
+                                         </tr>
+                                       </table>
+							      	   <a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+							      	   <nav id="site-navigation" class="main-navigation" role="navigation">
+
+															      				<table width="79%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                                                  <tr>
+                                                                                    <td bgcolor="#000000"><span class="menu-toggle">
+                                                                                      <?php _e( 'Menu', 'twentytwelve' ); ?>
+                                                                                    </span></td>
+                                                                                  </tr>
+                                                                                </table>
+															      				<div class="skip-link assistive-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>">
+															      				  <?php _e( 'Skip to content', 'twentytwelve' ); ?>
+															      				</a></a></div>
 																			     		      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-																					      	    </nav><!-- #site-navigation -->
+       </nav><!-- #site-navigation -->
+</header>
+<!-- #masthead -->
 
-																						    </header><!-- #masthead -->
-
-																						    <div id="main" class="wrapper">
