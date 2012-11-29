@@ -139,8 +139,8 @@ footer.entry-meta {
 }
 
 .qtrans_language_chooser .qtrans_flag_and_text {
-     width:40px;  /* image width */
-     height:40px; /* image height */
+     width:40px;  // image width
+     height:40px; // image height
      padding:7px;
 }
 
